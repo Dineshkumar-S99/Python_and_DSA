@@ -1,7 +1,4 @@
-# PATTERN PROGRAMING
-
-1. print based * on the rows based on given input
-```python
+#print based * on the rows based on given input
 '''eg: n =3 ->o/p:
 *
 *
@@ -9,19 +6,16 @@
 n = int(input())
 for i in range(n):
       print("*")
-```
 
-2. now * in coloumns with space
-```python
+
+# now in coloumns with space
 '''eg:n=3
 o/p: * * *'''
 for i in range(n):
       print("*", end=" ") 
-```
 
 
-3. print * in both coloumns and rows
-```python
+#both coloumns and rows
 '''eg: n=3
 o/p:
 * * *
@@ -35,17 +29,15 @@ for i in range(n):
 #or 
 for i in range(n):
       print("* "*n)
-```
 
-4. if we want to print the letters from string then
-```python
+
+#if we want to print the letters from string then
 s1 = "Dinesh"
 for i in range(n):
       print(f"{s1[i]} "*n)
-```
 
-5. if we want each letter in each column means
-```python
+
+#if we want each letter in each column means
 '''eg:THOR
 o/p:
 T H O R
@@ -56,11 +48,9 @@ for i in range(n):
       for i in s2:
             print(i,end=" ")
       print()
-```
 
 
-6. print alphabets in given format
-```python
+#print alphabets
 '''eg:n=3
 A B C
 D E F
@@ -74,10 +64,9 @@ for i in range(n):
             if val > ord("Z"):
                   val = ord("A")
       print()
-```
 
-7. print repeated alphabets and change alphabets for every row as below
-```python
+
+#print repeated alphabets and change alphabets for every row
 '''eg: n=3
 A A A
 B B B
@@ -91,6 +80,7 @@ for i in range(n):
       if val > ord("Z"):
                   val = ord("A")
       print()
+
 
 #change values for every column and print same o/p for every row
 '''eg: n=4
@@ -108,11 +98,9 @@ for i in range(n):
             if val > ord("Z"):
                   val = ord("A")
       print()
-```
 
 
-8. if a value is 5 the letters should start from E and go on
-```python
+#if a value is 5 the letters should start from E and go on
 '''eg: n=3 -> 3 rows and 3 columns
 o/p:
 C D E
@@ -146,10 +134,9 @@ for i in range(n):
             if val > ord("Z"):
                   val = ord("A")
       print()
-```
 
-9. print * for odd and @ for even values of j/ column
-```python
+
+#print * for odd and @ for even values of j/ column
 '''eg: n=4
 o/p:
 @ * @ *
@@ -170,10 +157,9 @@ for i in range(n):
       for j in range(n):
             print("*" if j%2==0 else "@",end=" ")
       print()
-```
 
-10. for every rows now if the row is odd then print * and if the row is even then print @
-```python
+
+#for every rows now
 '''
 n = 4
 @ @ @ @
@@ -185,10 +171,9 @@ for i in range(n):
       for j in range(n):
             print("*" if i%2==0 else "@",end=" ")
       print()
-```
 
-11. mix of caps and small letters
-```python
+
+#mix of caps and small letters
 '''eg: n=4
 A b C d
 E f G h
@@ -218,10 +203,9 @@ for i in range(n):
             if val > ord("Z"):
                   val = ord("A")
       print()
-```
 
-12. print * and @ wise versa
-```python
+
+#print * and @ wise versa
 '''eg: n=3
 * @ *
 @ * @
@@ -245,10 +229,9 @@ for i in range(1,n+1):
             print("*"if White==True else "@", end=" ")
             White = not White
       print()
-```
 
-13. print values for every columns
-```python
+
+#print values for every columns
 '''eg: n=4
 1 2 3 4
 5 6 7 8
@@ -263,11 +246,9 @@ for i in range(n):
             if val >9:
                   val =1
       print()
-```
 
 
-14. print values -> 1 to 99 as 01 to 09 everything 2 digits
-```python
+#print values -> 1 to 99 as 01 to 09 everything 2 digits
 '''eg:n =4
 01 02 03 04
 05 06 07 08
@@ -282,10 +263,9 @@ for i in range(n):
             if val >99:
                   val =1
       print()
-```
 
-15. Print the following pattern
-```python
+
+#Print the following pattern
 '''
 * * * * *
 * C B A *
@@ -308,11 +288,10 @@ for i in range(n):
       val=a+1
       if val>ord("Z"):
             val= ord("A")
-```
 
 
-16. by using functions fun(n) print the following pattern
-```python
+
+#by using functions fun(n)
 '''
 A B C D E
 B       F
@@ -336,11 +315,10 @@ def fun1(n):
 
 n = int(input())
 fun1(n)
-```
 
 
-17. reverse of above
-```python
+
+#reverse of above
 '''
 E D C B A
 F       B
@@ -367,10 +345,8 @@ def fun1(n):
 
 n = int(input())
 fun1(n)
-```
 
-18. print the following pattern for n =5
-```python
+
 '''
 * * * * * 
 *   a   *
@@ -389,11 +365,8 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
 
-19. print the following pattern for n =5
-```python
 '''
 * * a * * 
 *   b   *
@@ -417,11 +390,8 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
 
-20. print the following pattern for n =5
-```python
 '''
 * * A * * 
 *   B   *
@@ -466,11 +436,9 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
 
-21. instead small if every letter is caps then
-```python
+#instead small if every letter is caps then
 n = int(input())
 val =ord("A")
 a = ord("A")
@@ -489,10 +457,9 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
-22. print the following pattern for n =5
-```python
+
+
 '''
 * * * * *
 * *     *
@@ -509,11 +476,8 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
 
-23. print the following pattern for n =5
-```python
 '''
 * * * * *
 *     * *
@@ -544,11 +508,8 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
 
-24. print the following pattern for n =5
-```python
 '''
 *
 * *
@@ -573,11 +534,9 @@ for i in range(n):
       if i>=j:
             print("*",end=" ")
   print()
-```
 
 
-25. instead start print characters from A
-```python
+#instead start print characters
 n = int(input())
 val = ord("A")
 for i in range(n):
@@ -591,11 +550,8 @@ val = ord("A")
 for i in range(1,n+1):
   print(f"{chr(val)} "*i)
   val +=1
-```
 
 
-26. print the following pattern for n =5
-```python
 '''
 A
 B A
@@ -631,10 +587,8 @@ for i in range(n):
     print(chr(val),end=" ")
     val-=1
   print()
-```
 
-27. print the following pattern for n=5
-``` Python
+
 '''
 E D C B A
 J I H G F
@@ -651,10 +605,8 @@ for i in range(n):
     val-=1
   val=a+1
   print()
-```
 
-28. print the following pattern for n=5
-``` Python
+
 '''
 A B C D E
 J I H G F
@@ -675,21 +627,16 @@ for i in range(1,n+1):
       else:val-=1
   val+=(n-1)
   print()
-```
 
-29. print the following pattern for n=5
-``` Python
+
 '''
 A J K T U
 B I L S v
 C H M R W
 D G N Q X
 E F O P y'''
-```
 
 
-30. print the following pattern for n=5
-``` Python
 '''
         *
       * *
@@ -704,6 +651,7 @@ for i in range(1,n+1):
     else:
       print("*", end=" ")
   print()
+
 
 #or
 n=int(input())
@@ -726,19 +674,15 @@ n=int(input())
 for i in range(n):
   print(" "*(n-i-1),end=" ")
   print("*"*(i+1))
-```
 
-> note: even single mistake could make it equlatrial triangle
-``` Python
+
 #equlatrial triangle
 n=int(input())
 for i in range(n):
   print(" "*(n-i-1)+"* "*(i+1))
-```
 
 
-31. print the following pattern for n=5
-``` Python
+
 '''
         A
       B A
@@ -759,10 +703,8 @@ for i in range(1,n+1):
             val=ord("A")
   val=a+1
   print()
-```
 
-32. print the following pattern for n=5
-``` Python
+
 '''
 E D C D A
 J I H G F
@@ -784,10 +726,8 @@ for i in range(n):
   if val >ord("Z"):
     val=ord("A")
   print()
-```
 
-33. print the following pattern for n=5
-``` Python
+
 '''
         A
       C B
@@ -810,11 +750,8 @@ for i in range(1,n+1):
   while val>ord("Z"):
     val-=26
   print()
-```
 
 
-34. print the following pattern for n=5
-``` Python
 '''
 * * * * *
 * * * *
@@ -829,7 +766,9 @@ def r270(n):
       else:#can give else or no need
         print(" ",end=" ")
     print()
+
 r270(int(input()))
+
 
 #or
 def r270(n):
@@ -837,17 +776,17 @@ def r270(n):
     print("* "*(n-i))
 r270(int(input()))
 
+
 #or
 def r270(n):
   for i in range(n):
     for j in range(n-i):
         print("*",end=" ")
     print()
-r270(int(input()))
-```
 
-35. print the following pattern for n=5
-``` Python
+r270(int(input()))
+
+
 '''
 A F J M O
 B G K N
@@ -864,12 +803,9 @@ def f1(n):
         val= val+(n-j)
     val = a+1
     print()
+
 f1(int(input()))
-```
 
-
-36. print the following pattern for n=5
-``` Python
 '''
 A F K P U
 B G L Q V
@@ -885,12 +821,10 @@ def f1(n):
       val+=n
     val = a+1
     print()
+
 f1(int(input()))
-```
 
 
-37. print the following pattern for n=5
-``` Python
 '''
 E J O T Y
 D I N S X
@@ -909,10 +843,8 @@ for i in range(n):
     val+=c1
   print()
   val = a+1
-```
 
-38. print the following pattern for n=5
-``` Python
+
 '''
 E I L N O
 D H K M
@@ -931,10 +863,8 @@ for i in range(n):
     val+=c1
   print()
   val = a-1
-```
 
-39. print the following pattern for n=5
-``` Python
+
 '''
 * * * * *
   * * * *
@@ -950,17 +880,16 @@ def f1(n):
       else:
         print(" ",end=" ")
     print()
+
 f1(int(input()))
 
-#or
+
 for i in range(n):
         print(("  "*i)+("* "(n-i)),end=" ")
 '''if given only one space in print normal print then it will show like cone'''
-```
 
 
-40. Print an NP - Non Prymid for n=5
-``` Python
+#NP - Non Prymid
 '''
         *
       * * *
@@ -986,6 +915,7 @@ for i in range(n):
     print("*",end=" ")
   print()
 
+
 #or 
 for i in range(n):
   for j in range(n+i):
@@ -998,11 +928,8 @@ for i in range(n):
 #or
 for i in range(n):
   print(("  "*(n-i-1))+("* "*(2*i+1)))
-```
 
 
-41. print the following pattern for n=5
-``` Python
 '''
 * * * * * * * * *
   * * * * * * *
@@ -1027,10 +954,8 @@ for i in range(n):
       print("*",end=" ")
     else:print(" ",end=" ")
   print()
-```
 
-42. print the following pattern for n=5
-``` Python
+
 '''
         1
       1 2 1
@@ -1052,10 +977,8 @@ for i in range(n):
     print(val,end=" ")
     val-=1
   print()
-```
 
-43. print the following pattern for n=5
-``` Python
+
 '''
         A
       B C D
@@ -1077,10 +1000,8 @@ for i in range(n):
     if val>ord("Z"):
       val =ord("A")
   print()
-```
 
-44. print the following pattern for n=5
-``` Python
+
 '''
         A
       B A B
@@ -1107,11 +1028,10 @@ for i in range(n):
       val =ord("A")
   print()
   val =a+1
-```
 
-45. for n=5 print the following pattern
-``` Python
-'''
+
+'''for n=5
+print the following pattern
     *    
   * * *  
 * * * * *'''
@@ -1131,10 +1051,8 @@ for i in range(n//2+1):
     else:
       print(" ",end=" ")
   print()
-```
 
-46. print the following pattern for n=5
-``` Python
+
 '''
 * * * * *
   * * *
@@ -1148,6 +1066,7 @@ for i in range(n):
       print(" ",end=" ")
   print()
 
+
 #or 
 for i in range(n):
   for j in range(2*n-1-i):
@@ -1156,10 +1075,8 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
-47. print the following pattern for n=5
-``` Python
+
 '''
         *
       * * *
@@ -1188,10 +1105,8 @@ print("\n".join(l1+list(reversed(l1[:-1]))))
 n=int(input())
 l1=["  "*(n-i-1)+"* "*(2*i+1)for i in range(n)]
 print("\n".join(l1+l1[-2::-1]))
-```
 
-48. print the following pattern for n=5
-``` Python
+
 '''
         *
       * * *
@@ -1208,10 +1123,8 @@ l1=[]
 for i in range(n):
   l1.append("  "*(n-i-1)+"* "*(2*i+1))
 print("\n".join(l1+["P Y S P I D E R S"]+l1[-2::-1]))
-```
 
-49. print the following pattern for n=5
-``` Python
+
 '''
         *
       * * *
@@ -1237,10 +1150,8 @@ l1=[]
 for i in range(n-1):
   l1.append("  "*(n-i-1)+"* "*(2*i+1))
 print("\n".join(l1+["P Y S P I D E R S"]+l1[::-1]))
-```
 
-50. print the following pattern for n=5
-``` Python
+
 '''
       *
     * * *
@@ -1257,10 +1168,8 @@ l1=[]
 for i in range(n):
   l1.append("  "*(n-i-1)+"* "*(2*i+1))
 print("\n".join(l1+["S P I D E R S"]+l1[::-1]))
-```
 
-51. print the following pattern for n=5
-``` Python
+
 '''
         *
       * * *
@@ -1280,10 +1189,8 @@ l1=[]
 for i in range(n//2+1):
   l1.append("  "*(n//2-i)+"* "*(2*i+1))
 print("\n".join(l1+l1[-2::-1]))
-```
 
-52. print the following pattern for n=5
-``` Python
+
 '''
         *
       *   *
@@ -1300,10 +1207,8 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-```
 
-53. print the East Pyramid for n =5
-``` Python
+
 '''
 *
 * *
@@ -1320,6 +1225,7 @@ for i in range(1,n+1):
   l1.append("* "*i)
 print("\n".join(l1+l1[-2::-1]))
 
+
 #without list
 n =int(input())
 for i in range(n):
@@ -1330,6 +1236,7 @@ for i in range(n-1):
   for j in range(n-i-1):
     print("*",end=" ")
   print()
+
 
 #with two for loop
 n =int(input())
@@ -1354,10 +1261,8 @@ for i in range(2*n-1):
   print("* "*a)
   if i<n-1:a+=1
   else:a-=1
-```
 
-54. print the following pattern for n=5
-``` Python
+
 '''
 *
 * *
@@ -1371,6 +1276,7 @@ for i in range(1,((n+1)//2)+1):
   l1.append("* "*i)
 print("\n".join(l1+l1[-2::-1]))
 
+
 #without list using loops
 n =int(input())
 for i in range(n):
@@ -1381,6 +1287,7 @@ for i in range(n):
       print(" ",end=" ")
   print()
 
+
 #with one for loop
 n =int(input())
 for i in range(n):
@@ -1389,6 +1296,7 @@ for i in range(n):
   else:
     print("* "*(n-i))
 
+
 #or
 n=int(input())
 a=1
@@ -1396,11 +1304,8 @@ for i in range(n):
   print("* "*a)
   if i<n//2:a+=1
   else:a-=1
-```
 
-
-> some own exapmles trials
-``` Python
+#own exapmles trials
 n =int(input())
 val = ord("A")
 for i in range(n):
@@ -1411,6 +1316,7 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
+
 
 #2
 n =int(input())
@@ -1460,10 +1366,8 @@ for i in range(n):
       print(" ",end=" ")
   val +=1
   print()
-```
 
-55. print the following pattern for n=5
-``` Python
+
 '''
 1
 2 1
@@ -1487,10 +1391,8 @@ for i in range(2*n-1):
   else:
     val = a-1
   print()
-```
 
-56. print the following pattern for n=5
-``` Python
+
 '''
 01
 02 03
@@ -1506,10 +1408,8 @@ for i in range(n):
       print(f"0{a}",end=" ")
       a+=1
   print()
-```
 
-57. print the following pattern for n=5
-``` Python
+
 #SPIDERMAN
 '''
 S
@@ -1526,10 +1426,8 @@ for i in range(n):
       print(S[a],end=" ")
       a+=1
   print()
-```
 
-58. print the following pattern for n=5
-``` Python
+
 '''
 A
 1 B
@@ -1553,10 +1451,8 @@ for i in range(n):
       print(" ",end=" ")
     a +=1
   print()
-```
 
-59. print the following pattern for n=5
-``` Python
+
 '''
 A
 B A
@@ -1577,10 +1473,7 @@ for i in range(n):
     val = a+1
   else:
     val = a-1
-```
 
-60. print the following pattern West Pyramid for n=5
-``` Python
 '''
 when n =5
         *
@@ -1599,6 +1492,7 @@ for i in range(1,n+1):
   l1.append("  "*(n-i)+"* "*i)
 print("\n".join(l1+l1[-2::-1]))
 
+
 #without using list and print by using for loop
 n =int(input())
 for i in range(n):
@@ -1615,6 +1509,7 @@ for i in range(1,n):
     else:
       print(" ",end=" ")
   print()
+
 
 #using two for loops
 n =int(input())
@@ -1635,11 +1530,9 @@ for i in range(2*n-1):
     a+=1
   else:
     a-=1
-```
 
 
->note: single change in space will make it diamond
-``` Python
+#note single space change in space will make it diamond
 '''
     *
    * *
@@ -1658,11 +1551,8 @@ for i in range(2*n-1):
     a+=1
   else:
     a-=1
-```
 
 
-61. print the following pattern for n=5
-``` Python
 '''
     *
   * *
@@ -1677,4 +1567,3 @@ for i in range(n):
     else:
       print(" ",end=" ")
   print()
-  ```
