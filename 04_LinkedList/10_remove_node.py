@@ -1,3 +1,5 @@
+# Remove Node in a LL
+
 class Node:
     def __init__(self,value):
         self.value=value
@@ -94,7 +96,7 @@ class LinkedList:
     
     def remove_node(self,index):
         if index<0 or index>self.length:
-            return False
+            return None
         if index==0:
             return self.pop_first_node()
         if index==self.length:
@@ -130,3 +132,97 @@ my_ll.print_ll()
 
 my_ll.remove_node(2)
 my_ll.print_ll()
+
+
+#or
+
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def remove_node_by_index(self, index):
+        current = self.head
+        previous = None
+        position = 0
+
+        # Traverse the linked list to find the node at the desired index
+        while current is not None:
+            if index == 0:
+                # Update the head pointer to the next node
+                self.head = current.next
+                # Free the memory of the removed node
+                current.next = None
+                return
+
+            if position == index:
+                # Update the links to bypass the current node
+                previous.next = current.next
+                # Free the memory of the removed node
+                current.next = None
+                return
+
+            previous = current
+            current = current.next
+            position += 1
+
+        # Handle case if the index is out of range
+        print("Index out of range.")
+
+# Example usage
+linked_list = LinkedList()
+linked_list.head = Node(1)
+second_node = Node(2)
+third_node = Node(3)
+linked_list.head.next = second_node
+second_node.next = third_node
+# Removing the node at index 1
+linked_list.remove_node_by_index(1)
+
+
+
+#or using value
+class Node:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def remove_node(self, value):
+        current = self.head
+        previous = None
+
+        # Traverse the linked list to find the node to remove
+        while current is not None:
+            if current.value == value:
+                # Update the links to bypass the current node
+                if previous is not None:
+                    previous.next = current.next
+                else:
+                    self.head = current.next
+                # Free the memory of the removed node
+                current.next = None
+                return
+            previous = current
+            current = current.next
+
+        # Handle case if the node to remove is not found
+        print("Node not found in the linked list.")
+
+# Example usage
+linked_list = LinkedList()
+linked_list.head = Node(1)
+second_node = Node(2)
+third_node = Node(3)
+linked_list.head.next = second_node
+second_node.next = third_node
+
+# Removing the node with value 2
+linked_list.remove_node(2)
