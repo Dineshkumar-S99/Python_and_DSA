@@ -64,6 +64,8 @@ class LinkedList:
         self.head=self.head.next
         temp.next=None
         self.length-=1
+        if self.length==0:#This will be executed if the length of LL started with 1
+            self.tail=None
         return temp.value
 
 my_ll=LinkedList(10)
