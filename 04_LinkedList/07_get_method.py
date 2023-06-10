@@ -1,3 +1,7 @@
+#GET method for LL
+
+#this will return the value at the given index
+
 class Node:
     def __init__(self,value):
         self.value=value
@@ -78,3 +82,4 @@ my_ll.append(40)
 my_ll.print_ll()
 print(my_ll.get(2))
 print(my_ll.get(5))
+print(my_ll.get(-1))
