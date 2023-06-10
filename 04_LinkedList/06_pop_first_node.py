@@ -1,3 +1,5 @@
+#POP FIRST NODE in LL
+
 class Node:
     def __init__(self,value):
         self.value=value
@@ -67,6 +69,7 @@ my_ll=LinkedList(10)
 my_ll.append(20)
 my_ll.append(30)
 my_ll.print_ll()
+
 print(my_ll.pop())
 my_ll.print_ll()
 my_ll.prepend(60)
@@ -75,6 +78,7 @@ print(my_ll.pop())
 print(my_ll.pop())
 print(my_ll.pop())
 my_ll.print_ll()
+
 my_ll.prepend(18)
 my_ll.prepend(29)
 my_ll.print_ll()
