@@ -61,7 +61,8 @@ class LinkedList:
         if self.head is None:
             return None
         temp=self.head
-        self.head=temp.next
+        self.head=self.head.next
+        temp.next=None
         self.length-=1
         return temp.value
 
@@ -69,7 +70,6 @@ my_ll=LinkedList(10)
 my_ll.append(20)
 my_ll.append(30)
 my_ll.print_ll()
-
 print(my_ll.pop())
 my_ll.print_ll()
 my_ll.prepend(60)
@@ -82,9 +82,9 @@ my_ll.print_ll()
 my_ll.prepend(18)
 my_ll.prepend(29)
 my_ll.print_ll()
-my_ll.pop_first_node()
+print(my_ll.pop_first_node())
 my_ll.print_ll()
-my_ll.pop_first_node()
+print(my_ll.pop_first_node())
 my_ll.print_ll()
-my_ll.pop_first_node()
+print(my_ll.pop_first_node())
 my_ll.print_ll()
