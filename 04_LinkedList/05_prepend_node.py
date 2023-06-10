@@ -1,3 +1,12 @@
+#PREPENDINGing a NODE in LinkedList
+
+#i.e: adding node to the start of the LL
+
+'''
+we have two edge cases,for perpendinging the node form the LinkedList 
+1. LinkedList could have more than one element in it.
+2. Where the LinkedList is already empty'''
+
 class Node:
     def __init__(self,value):
         self.value=value
