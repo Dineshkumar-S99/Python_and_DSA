@@ -69,12 +69,18 @@ class LinkedList:
         temp =self.head
         for _ in range(index):
             temp=temp.next
-        return temp.value
+        return temp
+    
+    def set_value(self,index,value):
+        temp=self.get(index)
+        if temp is not None:
+            temp.value=value
+            return True
+        return False
 
 my_ll=LinkedList(10)
 my_ll.append(20)
 my_ll.append(30)
 my_ll.append(40)
+my_ll.set_value(7,70)
 my_ll.print_ll()
-print(my_ll.get(2))
-print(my_ll.get(5))
