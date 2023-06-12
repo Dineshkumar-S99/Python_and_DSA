@@ -54,16 +54,15 @@ class LinkedList:
             temp=temp.next
         print()
 
-    def pop_first_node(self):
+    def prepend(self,value):
+        new_node=Node(value)
         if self.head is None:
-          return None
-        temp=self.head
-        self.head=self.head.next
-        temp.next=None
-        self.length-=1
-        if self.length==0:#This will be executed if the length of LL started with 1
-          self.tail=None
-        return temp.value
+            self.head=new_node
+            self.tail=new_node
+        else:
+            new_node.next=self.head
+            self.head=new_node
+        self.length+=1
 
 my_ll=LinkedList(10)
 my_ll.append(20)
