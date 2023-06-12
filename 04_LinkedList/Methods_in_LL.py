@@ -75,7 +75,18 @@ class LinkedList:
         for _ in range(index):
             temp = temp.next
         return temp
-        
+
+    #using while loop   
+    '''def get(self,index):
+        if index<0 or index>=self.length:
+            return None
+        temp=self.head
+        index = index
+        while index!=0:
+            temp=temp.next
+            index-=1
+        return temp'''
+
     def set_value(self, index, value):
         temp = self.get(index)
         if temp:
